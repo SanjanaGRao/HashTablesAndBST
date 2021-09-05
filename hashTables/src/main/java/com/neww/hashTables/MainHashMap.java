@@ -8,7 +8,7 @@ public class MainHashMap {
 
 	public static void main(String[] args) 
 	{
-		String sentence="To be or not to be";
+		String sentence="Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
 
 		ImplementHashMap<String,Integer> myNewHashMap = new ImplementHashMap<>();
 		String[] words=sentence.toLowerCase().split(" ");
@@ -23,9 +23,9 @@ public class MainHashMap {
 			myNewHashMap.add(word,value);
 		}
 		System.out.println(myNewHashMap);
-		int frequency=myNewHashMap.get("to");
+		int frequency=myNewHashMap.get("paranoid");
 		
-		System.out.println("The frequency of 'to' is: "+frequency);
+		System.out.println("The frequency of 'paranoid' is: "+frequency);
 	}
 
 }
