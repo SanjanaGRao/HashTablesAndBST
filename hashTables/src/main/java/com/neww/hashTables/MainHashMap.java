@@ -1,6 +1,11 @@
 package com.neww.hashTables;
 /*
  * Main class to perform the operations of hash map
+ * UC 1 - to get the frequency of words in a sentence.
+ * UC 2 - to get the frequency of the words in a Paragraph.
+ * @param sentence is used to write the input i.e., either a sentence or a paragraph
+ * @param words is used to split the words in a sentence.
+ * @frequency tells the no. of times the word occured in a sentence/Paragraph.
  * @author Sanjana Rao
  * @since 5-9-2021
  */
