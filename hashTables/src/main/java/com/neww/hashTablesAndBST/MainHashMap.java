@@ -1,4 +1,4 @@
-package com.neww.hashTables;
+package com.neww.hashTablesAndBST;
 /*
  * Main class to perform the operations of hash map
  * UC 1 - to get the frequency of words in a sentence.

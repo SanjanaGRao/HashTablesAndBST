@@ -1,4 +1,4 @@
-package com.neww.hashTables;
+package com.neww.hashTablesAndBST;
 /*
  * This public interface INode is used to define a node.
  * @param K is of integer type.

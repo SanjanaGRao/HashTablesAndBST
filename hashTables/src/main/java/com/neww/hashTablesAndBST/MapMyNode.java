@@ -1,4 +1,4 @@
-package com.neww.hashTables;
+package com.neww.hashTablesAndBST;
 /*
  *  The class MapMyNode implements the interface INode which will set the getter and setter values.
  *  Has a K,V i.e., key and value pair.

@@ -1,4 +1,4 @@
-package com.neww.hashTables;
+package com.neww.hashTablesAndBST;
 /*
  * to perform the operations of hash map
  * @param <K> is the key of the hash map

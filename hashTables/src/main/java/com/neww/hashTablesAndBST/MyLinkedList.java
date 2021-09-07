@@ -1,4 +1,4 @@
-package com.neww.hashTables;
+package com.neww.hashTablesAndBST;
 /*
  *  The class MyLinkedList is created in order to understand how Linked List works and perform simple operation on Linked Lists
  *  such as creating a node, adding a new node, inserting a node, deleting a node, sorting the data in a linked list etc.
