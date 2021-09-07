@@ -108,7 +108,8 @@ public class MyLinkedList<K> {
 	 */
 	public INode<K> search(K Key) {
 		INode<K> tempNode = head;
-		while(tempNode != null && tempNode.getNext() != null) {
+		while(tempNode != null && tempNode.getNext() != null)
+		{
 			if (tempNode.getKey().equals(Key)){
 				return tempNode;
 			}
@@ -125,7 +126,8 @@ public class MyLinkedList<K> {
 	 */
 	public INode<K> deleteGivenNode(K Key) 
 	{		
-		if(head == null || head.getNext() == null) {
+		if(head == null || head.getNext() == null) 
+		{
 			return null;
 		}
 		INode<K> currentNode = head;

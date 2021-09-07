@@ -46,6 +46,24 @@ public class ImplementHashMap<K,V>
 		}
 	}
 	
+	/*
+	 * The method deleteWord is to delete a word in the paragraph.
+	 * It takes the parameters Key and Value and pops it to the linked list using linked list's pop function.
+	 */
+	public void deleteWord(K key,V value)
+	{
+		MapMyNode<K,V> myMapNode=(MapMyNode<K,V>)this.myLinkedList.search(key);
+		if(myMapNode!=null)
+		{
+			myMapNode=new MapMyNode<>(key,value);
+			this.myLinkedList.pop();
+		}
+		else
+		{
+			System.out.println("Word not found.");
+		}
+	}
+	
 	//This method is used to display.
 	@Override
 	public String toString() {

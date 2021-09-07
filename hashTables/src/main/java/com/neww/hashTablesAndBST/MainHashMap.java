@@ -28,9 +28,12 @@ public class MainHashMap {
 			myNewHashMap.add(word,value);
 		}
 		System.out.println(myNewHashMap);
-		int frequency=myNewHashMap.get("paranoid");
-		
+		int frequency=myNewHashMap.get("paranoid");		
 		System.out.println("The frequency of 'paranoid' is: "+frequency);
+		int deleteAWord = myNewHashMap.get("avoidable");
+		myNewHashMap.deleteWord("paranoids", deleteAWord);
+		System.out.println("The Word 'paranoids' is Deleted.");	
+		System.out.println(myNewHashMap);
 	}
 
 }

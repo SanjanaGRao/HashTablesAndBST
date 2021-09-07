@@ -48,7 +48,8 @@ public class MapMyNode<K,V> implements INode<K>
 	public String toString() {
 		StringBuilder myNodeString = new StringBuilder();
 		myNodeString.append("MapMyNode{" + "key=").append(this.key).append(" , value=").append(this.value).append('}');
-		if(next != null) {
+		if(next != null) 
+		{
 			myNodeString.append("->").append(next);
 		}
 		return myNodeString.toString();
