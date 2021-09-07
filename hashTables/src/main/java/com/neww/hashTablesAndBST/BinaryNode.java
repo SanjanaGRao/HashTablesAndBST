@@ -1,19 +1,21 @@
 package com.neww.hashTablesAndBST;
 /*
- * This public interface INode is used to define a node.
+ * This public class BinaryNode is used to define a node for BST.
  * @param K is of integer type.
  * @param left and right are used to indicate children of a tree
+ * Initially, they are set to null.
  * @author Sanjana Rao
- * @since 5-09-2021
+ * @since 7-09-2021
  */
 public class BinaryNode<K extends Comparable<K>> 
 {
-		K key;
+		K data;
 		BinaryNode<K> left;
 		BinaryNode<K> right;
-		public BinaryNode(K key)
+		public BinaryNode(K data)
 		{
-			this.key=key;
-			this.left=this.right=null;
+			this.data=data;
+			this.left=null;
+			this.right=null;
 		}
 }
