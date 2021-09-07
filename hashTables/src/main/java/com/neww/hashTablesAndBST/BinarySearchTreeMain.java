@@ -25,6 +25,7 @@ public class BinarySearchTreeMain
 		myBST.addElement(63);
 		myBST.addElement(67);
 		System.out.println("The size of Binary Search Tree is: "+myBST.getSize());
+		myBST.searchElement(63);
 		System.out.println("Elements of the BST - PostOrder Traversal: ");
 		myBST.getNodes();
 	}

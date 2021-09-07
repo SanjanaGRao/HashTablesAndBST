@@ -64,6 +64,38 @@ public class BinarySearchTree<K extends Comparable<K>>
 	}
 	
 	/*
+	 * The method searchElement is used to search for a particular element in the BST
+	 * @param data is the element to be searched
+	 * The method calls another method searchNodes which actually searches the data.
+	 */
+	public void searchElement(K data)
+	{
+		this.searchNodes(data,root);				
+	}
+	/*
+	 * The method searchNodes implements the search operation
+	 * UC 3 - Ability to search 63 in the Binary Tree
+	 * It takes the parameters data element to be searched and the root position of last search.
+	 * Again, compareTo is used. 
+	 * Recursion is used to search the nodes in the left and right subtree and to traverse.
+	 */
+	private void searchNodes(K data,BinaryNode<K> root)
+	{
+		if(root == null)
+		{
+			System.out.println("The element you are searching is not found.");
+			return;
+		}
+		int result=data.compareTo(root.data);
+		if(result == 0)
+			System.out.println("The element "+data+" is found in this BST.");
+		else if(result < 0)
+			searchNodes(data,root.left);
+		else
+			searchNodes(data, root.right);
+	}
+	
+	/*
 	 * The method getNodes is used to display
 	 * This method calls another method printNodes which outputs the elements of a BST
 	 */
